@@ -1,0 +1,169 @@
+.bg-gradient {
+  background: linear-gradient(135deg, #8e44ad, #ff6b81);
+}
+
+.blur-effect {
+  position: absolute;
+  filter: blur(100px);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Preahvihear&display=swap');
+.preahvihear-regular {
+  font-family: "Preahvihear", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.responsive-h1 {
+  font-size: 30px; /* Slightly larger for impact */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); /* Subtler shadow */
+  line-height: 120px; /* Improved line height */
+}
+
+/* Elegant Heading 2 Styles */
+.responsive-h2 {
+  font-family: 'Great Vibes', cursive; /* Beautiful script font */
+  font-size: 2.25rem; /* Larger and more prominent */
+  color: #daa520; /* Richer golden color */
+  text-shadow: 1px 1px 3px rgba(184, 134, 11, 0.6); /* Deeper golden shadow */
+  letter-spacing: 0.05em; /* Subtle letter spacing */
+  margin-bottom: 2rem; /* Increased bottom margin */
+}
+
+/* Media Queries for Responsiveness (Example) */
+@media (max-width: 768px) {
+  .responsive-h1 {
+    font-size: 2.25rem;
+  }
+  .responsive-h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+
+.btn-primary {
+  background-color: #d6d6d6; /* Light gray */
+  border-color: #dcdcdc; /* Light gray border to match background */
+  color: #333; /* Dark gray text */
+}
+
+.btn-primary:hover {
+  background-color: #ffffff; /* Yellow on hover */
+  border-color: #ffeb3b; /* Yellow border on hover */
+  color: #808080; /* Dark gray text */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for both background and border */
+}
+
+/* Optional: Add active state for click feedback */
+.btn-primary:active {
+  background-color: #ffd800; /* Darker yellow on click */
+  border-color: #ffd800; /* Darker yellow border on click */
+}
+
+.mute-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border: none;
+  padding: 0;
+  margin-top: 3px;
+}
+
+.mute-button svg {
+  color: black;
+  font-size: 30px;
+}
+/* Large screens (desktops) */
+@media (min-width: 1200px) {
+  .responsive-bg {
+    background-size: contain; /* Show full image without cropping */
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .responsive-bg {
+    background-size: cover; /* Crop image to fill viewport */
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+  .responsive-bg {
+    background-size: cover; /* Crop image for small devices */
+  }
+}
+.textwarn{color: #ffd145;}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .responsive-h1 {
+    font-size: 2.25rem;
+    letter-spacing: 0.05em;
+  }
+  .responsive-h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  .couple-image {
+    width: 60%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .couple-image {
+    width: 70%;
+    max-width: 200px;
+  }
+}
+
+/* Couple Image Styles */
+.couple-image {
+  display: block; /* Ensures centering works correctly */
+  margin: 0 auto; /* Centers the image horizontally */
+  width: 50%; /* Default width (desktop) */
+  max-width: 250px; /* Default max width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .couple-image {
+    width: 60%; /* Adjusted width for tablets */
+    max-width: 300px; /* Adjusted max width for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .couple-image {
+    width: 50%; /* Adjusted width for phones */
+    max-width: 160px; /* Adjusted max width for phones */
+  }
+}
+
+/* Optional: Adjust for larger screens */
+@media (min-width: 1200px) {
+  .couple-image {
+    width: 15%; /* Slightly smaller width for large screens if needed */
+    max-width: 200px; /* Increase max width for large screens */
+  }
+}
+.text1{
+  color: #f9f3bc; font-weight: 
+  bolder;font-weight: bold !important;
+}
