@@ -5,7 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import coupleImage from "../assets/image/couple.png";
 import { Button } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import WeddingPhotoGallery from "./Test";
+import WeddingPhotoGallery from "./WeddingPhotoGallery";
+import Wish from "./Wish";
 
 
 
@@ -154,7 +155,7 @@ function Detail() {
           <AnimatedSection key={index} delay={0.3 * index}>
             <div className="motion7 khmer-moul-text" style={{ fontSize: "20px" }}>
               ម៉ោង {item.time}
-              <p className="t2 mt-2" style={{ fontSize: "20px" }}>{item.event}</p>
+              <p className="t2 mt-2" style={{ fontSize: "17px" }}>{item.event}</p>
             </div>
           </AnimatedSection>
         ))}
@@ -200,10 +201,10 @@ function Detail() {
           </div>
         </AnimatedSection>
           <WeddingPhotoGallery/>
+        <div className="mt-5"><Wish/></div>
+
         </div>
        </div>
-      
-
     </>
   );
 }
